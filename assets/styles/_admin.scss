@@ -1,0 +1,260 @@
+// .admin-navbar-container {
+//   height: 80px;
+// }
+// .admin-navbar-sub-container {
+//   height: 100%;
+// }
+// .admin-navbar-container {
+//   background-color: #efefef;
+// }
+.admin-body {
+  background-image: url("../images/admin-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+.admin-nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-navbar-btn {
+  width: 60%;
+  position: relative;
+  aspect-ratio: 1/1;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  border-radius: 10px;
+  // box-shadow: -20px 20px 60px #cbcbcb, 20px -20px 60px #ffffff;
+  transition: all ease-in-out 200ms;
+  &:hover {
+    background-color: hsla(247, 73%, 59%, 0.103);
+  }
+}
+.admin-nav-logo {
+  width: 90%;
+}
+.admin-nav-icon {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.admin-navbar-btn-badge {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+.admin-menu-expand-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  transition: all ease-in-out 200ms;
+}
+.admin-menu-expanded {
+  left: 95% !important;
+}
+.admin-menu-expand-icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.admin-collapse-menu-container {
+  height: 100vh;
+  border-right: 1px solid rgba(87, 87, 87, 0.15);
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: -200%;
+  background: #efefef;
+  //   box-shadow: 5px 5px 10px #d5d5d5, -5px -5px 10px #ffffff;
+  transition: all ease-in-out 200ms;
+}
+.admin-collapse-menu-expanded {
+  left: 0 !important;
+}
+.admin-nav-link-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  //   border-top: 1px solid rgba(87, 87, 87, 0.15);
+  //   border-bottom: 1px solid rgba(87, 87, 87, 0.15);
+  transition: all ease-in-out 200ms;
+  &:hover {
+    background-color: hsla(247, 73%, 59%, 0.103);
+  }
+}
+.admin-nav-link-text {
+  color: var(--primary-color);
+}
+.admin-nav-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.admin-nav-link-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-nav-link-icon {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+//content
+
+.earning-starts-title {
+  text-transform: uppercase;
+}
+.earning-starts-link {
+  text-decoration: none;
+}
+.earning-starts-link-icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.top-countries-title {
+  text-transform: uppercase;
+}
+.top-countries-link {
+  text-decoration: none;
+}
+.top-countries-link-icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.stat-icon-container {
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.stat-icon-container-networth {
+  background-color: #e6ebe5;
+}
+.stat-icon {
+  font-size: 25px;
+}
+.stat-icon-networth {
+  color: #568827;
+}
+.stat-title {
+  font-size: 14px;
+  color: grey;
+  text-transform: uppercase;
+}
+.stat-value {
+  font-size: 25px;
+  font-weight: 500;
+}
+.earning-stat-container {
+  border-radius: 5px;
+  background: #efefef;
+  box-shadow: 5px 5px 10px #d2d2d2, -5px -5px 10px #ffffff;
+}
+//total earnings
+.stat-icon-container-earning {
+  background-color: #f7defb;
+}
+.stat-icon-earning {
+  color: #f238e1;
+}
+//returning orders
+.stat-icon-container-returning {
+  background-color: #dff8ff;
+}
+.stat-icon-returning {
+  color: #06889e;
+}
+//net profit
+.stat-icon-container-netprofit {
+  background-color: #e9e6f9;
+}
+.stat-icon-netprofit {
+  color: #604dc1;
+}
+//total profit
+.stat-icon-container-total-profit {
+  background-color: #f5fefd;
+}
+.stat-icon-total-profit {
+  color: #00d4e2;
+}
+//total expenses
+.stat-icon-container-total-expenses {
+  background-color: #fcf0fc;
+}
+.stat-icon-total-expenses {
+  color: #ef00d8;
+}
+
+.top-country-container {
+  position: relative;
+  aspect-ratio: 7/1;
+  border-radius: 10px;
+  background: #efefef;
+  box-shadow: 5px 5px 10px #d2d2d2, -5px -5px 10px #ffffff;
+  border: 2px solid white;
+  padding: 10px 0;
+  background-position: center;
+  background-size: cover;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+  }
+}
+.top-country-name {
+  z-index: 2;
+}
+.top-country-percentage {
+  z-index: 2;
+}
+.us-container {
+  background-image: url("../images/flags/Flag-United-States-of-America.webp");
+}
+.uk-container {
+  background-image: url("../images/flags/Flag_of_the_United_Kingdom_\(1-2\).svg.webp");
+}
+.lk-container {
+  background-image: url("../images/flags/Flag_of_Sri_Lanka.svg.png");
+}
+.india-container {
+  background-image: url("../images/flags/Flag_of_India.svg");
+}
+
+// top selling products
+.top-selling-product-container {
+  aspect-ratio: 1/1;
+  background-image: url("../images/product_01/img-01.jpg");
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: darken;
+}
+.top-selling-products-view-count-container {
+  background-color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.top-selling-products-view-count {
+  font-weight: 500;
+}
+.top-selling-products-view-count-icon {
+  font-size: 20px;
+  color: white;
+}

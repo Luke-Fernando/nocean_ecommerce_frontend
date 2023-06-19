@@ -1,0 +1,214 @@
+.listed-category {
+  font-size: 12px;
+}
+.single-product-image-container {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-product-image {
+  width: 100%;
+  display: none;
+}
+.single-product-image-selector {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-product-image-selector-img {
+  height: 100%;
+}
+.displayed-img {
+  display: block !important;
+}
+.active-selector {
+  border: 2px solid var(--primary-color);
+}
+.single-product-subtitle {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.single-product-topic-container {
+  border-bottom: 1px solid rgba(87, 87, 87, 0.15);
+}
+.product-grey-text {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reviews-count-link {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+.single-product-price-details-container {
+  border-bottom: 1px solid rgba(87, 87, 87, 0.15);
+}
+.single-product-price {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.single-product-qty-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.single-product-qty-input {
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  border: 1px solid #b6b6b68a;
+  background-color: var(--secondary-color);
+  transition: all ease-in-out 200ms;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+  }
+  &:focus {
+    outline: 1px solid var(--primary-color);
+  }
+}
+.single-product-action-btn {
+  width: 100%;
+  padding: 10px 0;
+  transition: all ease-in-out 200ms;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  &:hover {
+    border: 2px solid hsl(247, 73%, 69%);
+    color: hsl(247, 73%, 69%);
+  }
+}
+.single-product-action-buy {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  transition: all ease-in-out 200ms;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  &:hover {
+    background-color: hsl(247, 73%, 69%);
+  }
+}
+.specific-details-container {
+  background: #efefef;
+  box-shadow: 5px 5px 14px #e5e5e5, -5px -5px 14px #f9f9f9;
+}
+.specific-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.specific-name {
+  font-size: 14px;
+  color: grey;
+}
+.specific-value {
+  font-size: 14px;
+}
+
+.shipping-details-container {
+  background: #efefef;
+  box-shadow: 5px 5px 14px #e5e5e5, -5px -5px 14px #f9f9f9;
+}
+.payment-method {
+  width: 55px;
+  height: 30px;
+  border: 2px solid var(--primary-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-method-icon {
+  width: 90%;
+}
+.max-review-amount {
+  font-size: 30px;
+  color: grey;
+}
+.product-stars {
+  color: #daa520;
+  font-size: 25px;
+}
+.rating-count {
+  color: grey;
+  font-size: 14px;
+}
+.product-graph-stars {
+  color: #daa520;
+  font-size: 16px;
+}
+.rating-graph-bar {
+  background-color: rgba(128, 128, 128, 0.226);
+  height: 20px;
+  position: relative;
+}
+.rating-graph-bar-filler {
+  background-color: #daa520;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.rating-graph-bar-filler-5 {
+  width: 100%;
+}
+.product-graph-stars-odd {
+  color: rgba(128, 128, 128, 0.226);
+}
+.graph-count {
+  font-size: 14px;
+}
+.rating-graph-bar-filler-4 {
+  width: 80%;
+}
+.rating-graph-bar-filler-3 {
+  width: 60%;
+}
+.rating-graph-bar-filler-2 {
+  width: 40%;
+}
+.rating-graph-bar-filler-1 {
+  width: 20%;
+}
+.product-customer-stars {
+  color: #daa520;
+  font-size: 14px;
+}
+.customer-name {
+  font-size: 14px;
+  color: grey;
+}
+.customer-comment {
+  font-size: 16px;
+}
+.cutomer-review-container {
+  border-bottom: 1px solid #b6b6b68a;
+}
+.product-customer-stars-odd {
+  color: rgba(128, 128, 128, 0.226);
+}
+.see-all-reviews-link {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.related-product-img {
+  width: 100% !important;
+}
+.related-products-row {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.related-product-container {
+  border-width: 0 1px !important;
+  border-color: rgba(87, 87, 87, 0.15) !important;
+  border-style: solid !important;
+}

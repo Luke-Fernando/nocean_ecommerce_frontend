@@ -1,0 +1,68 @@
+.newtech-navbar {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(87, 87, 87, 0.15);
+    left: 0;
+    top: 100%;
+  }
+}
+.newtech-navbar-sub {
+  height: 80px;
+  //   background-color: aquamarine;
+}
+.newtech-logo-container {
+  height: 100%;
+}
+.newtech-logo {
+  width: 80%;
+}
+
+.newtech-nav-links {
+  height: 100%;
+}
+.newtech-nav-link {
+  text-decoration: none;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all ease-in-out 200ms;
+  &:hover {
+    color: $primary-color;
+  }
+}
+.nav-link-divider {
+  height: 20%;
+  width: 2px;
+  background-color: #575757b6;
+}
+.newtech-navbar-icon {
+  font-size: 25px;
+  color: $primary-color;
+  transition: all ease-in-out 200ms;
+  &:hover {
+    scale: 1.1;
+  }
+}
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  // background-color: red;
+}
+.ham-bar {
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.newtech-hamburger-icon {
+  scale: 1 !important;
+}
+@media (max-width: 992px) {
+  .newtech-logo {
+    width: 100%;
+  }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>Advanced Search</title>
+</head>
+
+<body class="body">
+
+    <!-- navbar  -->
+    <navbar class="container newtech-navbar position-relative d-flex flex-column justify-content-start">
+        <div class="row newtech-navbar-sub">
+            <div class="col-3 col-md-2 newtech-logo-container d-flex justify-content-center align-items-center">
+                <a href="index.html"><img src="./assets/images/logo.svg" alt="newtech logo" class="newtech-logo"></a>
+            </div>
+            <div class="col-9 col-md-10 newtech-nav-links d-flex justify-content-end align-items-center">
+                <a href="signin.html" class="newtech-nav-link mx-3 d-none d-md-block">Sign in</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="register.html" class="newtech-nav-link mx-3 d-none d-md-block">Register</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="list.html" class="newtech-nav-link mx-3 d-none d-md-block">Sell</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="#" class="newtech-nav-link mx-3 d-none d-md-block">Activities</a>
+                <a href="#" class="newtech-nav-link mx-3" title="Favourite"><i class="fa-regular fa-heart newtech-favourite-icon newtech-navbar-icon"></i></a>
+                <a href="#" class="newtech-nav-link mx-3" title="Search"><i class="fa-solid fa-magnifying-glass newtech-search-icon newtech-navbar-icon"></i></a>
+                <a href="#" class="newtech-nav-link mx-3" title="Bag"><i class="fa-solid fa-bag-shopping newtech-bag-icon newtech-navbar-icon"></i></a>
+                <a id="hamburger-container" href="#" class="newtech-nav-link ms-3 d-block position-relative d-md-none" title="top menu"><i id="newtech-hamburger-icon" class="fa-solid fa-bars newtech-hamburger-icon newtech-navbar-icon"></i>
+                    <i id="newtech-hamburger-icon-secondary" class="fa-solid fa-bars-staggered newtech-hamburger-icon newtech-navbar-icon position-absolute top-0 start-50 translate-middle-x opacity-0"></i></a>
+                <!-- <div id="hamburger-menu" class="hamburger-menu row ms-3 position-relative d-block d-md-none">
+                            <div class="ham-bar bar-1 col-9 position-absolute top-0 start-0"></div>
+                            <div id="bar-2" class="ham-bar bar-2 col-9 position-absolute top-50 start-0 translate-middle-y">
+                            </div>
+                            <div class="ham-bar bar-3 col-9 position-absolute bottom-0 start-0"></div>
+                        </div> -->
+            </div>
+        </div>
+    </navbar>
+    <!-- navbar  -->
+
+    <div class="container advanced-search-main-container mt-5 mb-5">
+        <div class="row advanced-search-title-container">
+            <h3 class="advanced-search-title">Advanced search</h3>
+        </div>
+        <div class="row d-flex justify-content-between mt-5">
+            <div class="col-3 advanced-search-menu-container">
+                <h5 class="advanced-search-menu-title">Items</h5>
+                <div class="row advanced-search-menus mt-4">
+                    <p class="ps-4 py-2 mx-0 my-2 advanced-search-menu advanced-search-menu-active">By item</p>
+                    <p class="ps-4 py-2 mx-0 my-2 advanced-search-menu">By seller</p>
+                    <p class="ps-4 py-2 mx-0 my-2 advanced-search-menu">By item number</p>
+                </div>
+            </div>
+            <div class="col-8 advanced-search-inputs-container">
+                <div class="row advanced-search-inputs-title-container mb-4">
+                    <h4 class="advanced-search-inputs-title">Find items</h4>
+                </div>
+                <div class="row advanced-search-inputs">
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <label for="item-number" class="advanced-search-label">Enter keywords or item number</label>
+                        <input id="item-number" type="text" class="advanced-search-input mt-2" placeholder="Enter keywords or item number">
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <p class="advanced-search-label m-0">Keyword options</p>
+                        <select class="advanced-search-input mt-2">
+                            <option value="">All words, any order</option>
+                            <option value="">Any words, any order</option>
+                            <option value="">Exact words, exact order</option>
+                            <option value="">Exact words, any order</option>
+                        </select>
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <label for="exclude-words" class="advanced-search-label">Exclude words from your search</label>
+                        <input id="exclude-words" type="text" class="advanced-search-input mt-2" placeholder="Exclude words from your search">
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-5">
+                        <p class="advanced-search-label m-0">In this category</p>
+                        <select class="advanced-search-input mt-2">
+                            <option value="">All categories</option>
+                            <option value="">Category 01</option>
+                            <option value="">Category 02</option>
+                            <option value="">Category 03</option>
+                            <option value="">Category 04</option>
+                            <option value="">Category 05</option>
+                            <option value="">Category 06</option>
+                        </select>
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <div class="row mb-4">
+                            <h6 class="m-0">Search Including</h6>
+                        </div>
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-1" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-1" class="filter-option">Title and description</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-2" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-2" class="filter-option">Completed items</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-3" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-3" class="filter-option">Sold items</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <h6 class="m-0">Show price between</h6>
+                        <div class="row d-flex flex-row flex-nowrap justify-content-start">
+                            <input id="max-price" type="text" class="advanced-search-input mt-2 me-2 w-25" placeholder="Max. $">
+                            <input id="min-price" type="text" class="advanced-search-input mt-2 w-25" placeholder="Min. $">
+                        </div>
+
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <div class="row mb-4">
+                            <h6 class="m-0">Buying format</h6>
+                        </div>
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-4" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-4" class="filter-option">Accepts offers</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-5" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-5" class="filter-option">Auction</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-6" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-6" class="filter-option">Buy It Now</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-7" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-7" class="filter-option">Classified ads</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <div class="row mb-4">
+                            <h6 class="m-0">Show results</h6>
+                        </div>
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-8" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-8" class="filter-option">Free returns</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-9" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-9" class="filter-option">Returns accepted</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-10" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-10" class="filter-option">Authorized seller</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-11" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-11" class="filter-option">Deals and savings</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-12" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-12" class="filter-option">Sale items</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-13" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-13" class="filter-option">Listed as lots</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-14" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-14" class="filter-option">Benefits charity</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-15" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-15" class="filter-option">Authenticity Guarantee</label>
+                        </div>
+                        <!-- filter option  -->
+                        <h6 class="m-0 mt-4">Items</h6>
+                        <div class="row d-flex flex-row flex-nowrap justify-content-start">
+                            <select class="advanced-search-input mt-2 me-2 w-25">
+                                <option value="">Ending within</option>
+                                <option value="">Ending in more than</option>
+                                <option value="">Started within</option>
+                            </select>
+                            <select class="advanced-search-input mt-2 w-25">
+                                <option value="">1 hour</option>
+                                <option value="">2 hours</option>
+                                <option value="">3 hours</option>
+                                <option value="">4 hours</option>
+                                <option value="">5 hours</option>
+                                <option value="">12 hours</option>
+                                <option value="">24 hours</option>
+                                <option value="">2 days</option>
+                                <option value="">3 days</option>
+                                <option value="">4 days</option>
+                                <option value="">5 days</option>
+                                <option value="">6 days</option>
+                                <option value="">7 days</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <div class="row mb-4">
+                            <h6 class="m-0">Shipping options</h6>
+                        </div>
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-16" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-16" class="filter-option">Free shipping</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-17" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-17" class="filter-option">Local pickup</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                    <!-- input -->
+                    <!-- input -->
+                    <div class="col-12 d-flex flex-column mb-4">
+                        <div class="row mb-4">
+                            <h6 class="m-0">Item location</h6>
+                        </div>
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-18" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-18" class="filter-option">Default</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-19" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-19" class="filter-option">US only</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-20" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-20" class="filter-option">North America</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-21" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-21" class="filter-option">Worldwide</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                    <!-- input -->
+                    <!-- input  -->
+                    <h6 class="m-0 mt-4">Sort by</h6>
+                    <div class="row d-flex flex-row flex-nowrap justify-content-start">
+                        <select class="advanced-search-input mt-2 me-2 w-25">
+                            <option value="">Time: ending soonest</option>
+                            <option value="">Time: newly listed</option>
+                            <option value="">Price + Shipping: lowest first</option>
+                            <option value="">Price + Shipping: highest first</option>
+                            <option value="">Distance: nearest first</option>
+                            <option value="">Best match</option>
+                        </select>
+                    </div>
+                    <!-- input  -->
+                    <!-- input  -->
+                    <h6 class="m-0 mt-4">View results</h6>
+                    <div class="row d-flex flex-row flex-nowrap justify-content-start">
+                        <select class="advanced-search-input mt-2 me-2 w-25">
+                            <option value="">List view</option>
+                            <option value="">Gallery view</option>
+                        </select>
+                    </div>
+                    <!-- input  -->
+                    <!-- input  -->
+                    <h6 class="m-0 mt-4">Results per page</h6>
+                    <div class="row d-flex flex-row flex-nowrap justify-content-start">
+                        <select class="advanced-search-input mt-2 me-2 w-25">
+                            <option value="">60</option>
+                            <option value="">120</option>
+                            <option value="">240</option>
+                        </select>
+                    </div>
+                    <!-- input  -->
+                    <div class="row advanced-search-btns mt-5 d-flex flex-nowrap align-items-center">
+                        <button class="advanced-search-btn me-4">Search</button>
+                        <a href="#">Clear options</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer  -->
+    <footer class="container-fluid footer position-relative">
+        <div class="container">
+            <div class="row py-5 d-flex justify-content-between align-items-start">
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Join us</h5>
+                    <a href="signin.html" class="footer-link">Sign in</a>
+                    <a href="register.html" class="footer-link">Register</a>
+                    <a href="#" class="footer-link">Sell</a>
+                    <a href="#" class="footer-link">Activities</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">About newTech</h5>
+                    <a href="#" class="footer-link">Company info</a>
+                    <a href="#" class="footer-link">News</a>
+                    <a href="#" class="footer-link">Our Blog</a>
+                    <a href="#" class="footer-link">Policies</a>
+                    <a href="#" class="footer-link">Government relations</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Connect with Us</h5>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-facebook footer-icon me-2"></i>Facebook</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-twitter me-2"></i>Twitter</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-linkedin me-2"></i>Linked in</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-youtube me-2"></i>Youtube</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Help & Contact</h5>
+                    <a href="#" class="footer-link">Seller Information Center</a>
+                    <a href="#" class="footer-link">Contact us</a>
+                </div>
+            </div>
+            <div class="row copyright-container">
+                <p class="text-center footer-copyright-text">Copyright &copy; 2023 newTech Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/filter.js"></script>
+</body>
+
+</html>

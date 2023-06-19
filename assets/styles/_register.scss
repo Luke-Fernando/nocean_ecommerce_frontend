@@ -1,0 +1,109 @@
+.account-register-container {
+  &::before {
+    content: "";
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background-color: var(--primary-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+.account-page-topic {
+  font-weight: 500;
+}
+.newtech-detail-input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  border: 1px solid #b6b6b68a;
+  background-color: var(--secondary-color);
+  transition: all ease-in-out 200ms;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+  }
+  &:focus {
+    outline: 1px solid var(--primary-color);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+}
+.newtech-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.create-account-btn {
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.go-to-signin {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.go-to-signin-link {
+  color: var(--primary-color);
+}
+.register-divider {
+  background-color: #ffffff;
+}
+.register-divider-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.social-btn {
+  aspect-ratio: 6/1;
+  border-radius: 50px;
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+}
+.social-login-logo-container {
+  height: 100%;
+  // aspect-ratio: 1/1;
+}
+.social-login-logo {
+  height: 60%;
+}
+.facebook-login {
+  background-color: #3d5a98;
+  border: none;
+}
+.facebook-login-text {
+  color: white;
+}
+.register-footer-link {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 992px) {
+  .account-register-container {
+    &::before {
+      display: none;
+    }
+  }
+}
+.forgot-password-link {
+  font-size: 14px;
+  color: var(--primary-color);
+}

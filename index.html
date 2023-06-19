@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>NewTech | Buy All of Your Favourite Tech Gadgets with Guaranteed Quality</title>
+</head>
+
+<body class="body">
+
+    <!-- navbar  -->
+    <navbar class="container newtech-navbar position-relative d-flex flex-column justify-content-start">
+        <div class="row newtech-navbar-sub">
+            <div class="col-3 col-md-2 newtech-logo-container d-flex justify-content-center align-items-center">
+                <a href="#"><img src="./assets/images/logo.svg" alt="newtech logo" class="newtech-logo"></a>
+            </div>
+            <div class="col-9 col-md-10 newtech-nav-links d-flex justify-content-end align-items-center">
+                <a href="signin.html" class="newtech-nav-link mx-3 d-none d-md-block">Sign in</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="register.html" class="newtech-nav-link mx-3 d-none d-md-block">Register</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="list.html" class="newtech-nav-link mx-3 d-none d-md-block">Sell</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="#" class="newtech-nav-link mx-3 d-none d-md-block">Activities</a>
+                <a href="#" class="newtech-nav-link mx-3" title="Favourite"><i class="fa-regular fa-heart newtech-favourite-icon newtech-navbar-icon"></i></a>
+                <a href="#" class="newtech-nav-link mx-3" title="Search"><i class="fa-solid fa-magnifying-glass newtech-search-icon newtech-navbar-icon"></i></a>
+                <a href="cart.html" class="newtech-nav-link mx-3" title="Bag"><i class="fa-solid fa-bag-shopping newtech-bag-icon newtech-navbar-icon"></i></a>
+                <a id="hamburger-container" href="#" class="newtech-nav-link ms-3 d-block position-relative d-md-none" title="top menu"><i id="newtech-hamburger-icon" class="fa-solid fa-bars newtech-hamburger-icon newtech-navbar-icon"></i>
+                    <i id="newtech-hamburger-icon-secondary" class="fa-solid fa-bars-staggered newtech-hamburger-icon newtech-navbar-icon position-absolute top-0 start-50 translate-middle-x opacity-0"></i></a>
+                <!-- <div id="hamburger-menu" class="hamburger-menu row ms-3 position-relative d-block d-md-none">
+                    <div class="ham-bar bar-1 col-9 position-absolute top-0 start-0"></div>
+                    <div id="bar-2" class="ham-bar bar-2 col-9 position-absolute top-50 start-0 translate-middle-y">
+                    </div>
+                    <div class="ham-bar bar-3 col-9 position-absolute bottom-0 start-0"></div>
+                </div> -->
+            </div>
+        </div>
+    </navbar>
+    <!-- navbar  -->
+    <!-- categories  -->
+    <section class="container categories-container">
+        <div id="categories-parent col-12" class="row categories-sub-container d-flex justify-content-between align-items-center">
+            <a href="#" class="category-link p-0 d-block position-relative">Smartphones</a>
+            <a href="#" class="category-link p-0 d-block position-relative">Computers</a>
+            <a href="#" class="category-link p-0 d-block position-relative">Gaming</a>
+            <a href="#" class="category-link p-0 d-block position-relative">Fitness</a>
+            <a href="#" class="category-link p-0 d-none d-sm-block position-relative">Robotics</a>
+            <a href="#" class="category-link p-0 d-none d-sm-block position-relative">Automotive</a>
+            <a href="#" class="category-link p-0 d-none d-md-block position-relative">Networking</a>
+            <a href="#" class="category-link p-0 d-none d-md-block position-relative">Beauty</a>
+            <a href="#" class="category-link p-0 d-none d-lg-block position-relative">Educational</a>
+            <a href="#" class="category-link p-0 d-none d-lg-block position-relative">Kids</a>
+            <a href="#" class="category-link p-0 d-none d-lg-block position-relative">Sports</a>
+            <a href="#" class="category-link p-0 d-none d-xl-block position-relative">Kitchen</a>
+            <a href="#" class="category-link p-0 d-none d-xl-block position-relative">Accessories</a>
+            <a href="#" class="category-link p-0 d-none d-xl-block position-relative">Security</a>
+            <div id="more-category-link" class="category-link more-category-link p-0 position-relative d-block d-xl-none">More
+                <div id="more-container" class="more-categories-dropdown position-absolute end-0 py-4 px-4 flex-column justify-content-start align-items-start d-none">
+                    <a href="#" class="category-link py-1 d-block d-sm-none position-relative">Robotics</a>
+                    <a href="#" class="category-link py-1 d-block d-sm-none position-relative">Automotive</a>
+                    <a href="#" class="category-link py-1 d-block d-md-none position-relative">Networking</a>
+                    <a href="#" class="category-link py-1 d-block d-md-none position-relative">Beauty</a>
+                    <a href="#" class="category-link py-1 d-block d-lg-none position-relative">Educational</a>
+                    <a href="#" class="category-link py-1 d-block d-lg-none position-relative">Kids</a>
+                    <a href="#" class="category-link py-1 d-block d-lg-none position-relative">Sports</a>
+                    <a href="#" class="category-link py-1 d-block d-xl-none position-relative">Kitchen</a>
+                    <a href="#" class="category-link py-1 d-block d-xl-none position-relative">Accessories</a>
+                    <a href="#" class="category-link py-1 d-block d-xl-none position-relative">Security</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- categories  -->
+    <!-- banner  -->
+    <section class="container mb-5 newtech-banners-container g-0 position-relative overflow-hidden d-flex flex-row justify-content-start">
+        <!-- baner 01 -->
+        <div id="banner-1" data-banner="1" class="newtech-banner newtech-banner-01 banner-1 g-0 row w-100">
+            <div class="col-7">
+                <div class="row banner-01-texts-container d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 my-1">
+                        <h1 class="text-center banner-01-black-friday display-2">Black Friday</h1>
+                    </div>
+                    <div class="col-12 my-1">
+                        <h3 class="text-end banner-01-discount h2">50% OFF</h3>
+                    </div>
+                    <div class="col-12 my-1 text-center"><button class="btn banner-01-sale-btn py-1 px-4 rounded-0">SALE</button></div>
+                </div>
+            </div>
+            <div class="col-5 banner-01-controller-container d-flex justify-content-center align-items-center">
+                <img src="./assets/images/banner-01/banner_01_controller.png" class="banner-01-controller" />
+            </div>
+        </div>
+        <!-- baner 01 -->
+        <!-- baner 02 -->
+        <div id="banner-2" data-banner="2" class="newtech-banner newtech-banner-01 g-0 row w-100">
+            <div class="col-7">
+                <div class="row banner-01-texts-container d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 my-1">
+                        <h1 class="text-center banner-01-black-friday display-2">White Friday</h1>
+                    </div>
+                    <div class="col-12 my-1">
+                        <h3 class="text-end banner-01-discount h2">50% OFF</h3>
+                    </div>
+                    <div class="col-12 my-1 text-center"><button class="btn banner-01-sale-btn py-1 px-4 rounded-0">SALE</button></div>
+                </div>
+            </div>
+            <div class="col-5 banner-01-controller-container d-flex justify-content-center align-items-center">
+                <img src="./assets/images/banner-01/banner_01_controller.png" class="banner-01-controller" />
+            </div>
+        </div>
+        <!-- baner 02 -->
+        <!-- baner 03 -->
+        <div id="banner-3" data-banner="3" class="newtech-banner newtech-banner-01 g-0 row w-100">
+            <div class="col-7">
+                <div class="row banner-01-texts-container d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-12 my-1">
+                        <h1 class="text-center banner-01-black-friday display-2">Red Friday</h1>
+                    </div>
+                    <div class="col-12 my-1">
+                        <h3 class="text-end banner-01-discount h2">50% OFF</h3>
+                    </div>
+                    <div class="col-12 my-1 text-center"><button class="btn banner-01-sale-btn py-1 px-4 rounded-0">SALE</button></div>
+                </div>
+            </div>
+            <div class="col-5 banner-01-controller-container d-flex justify-content-center align-items-center">
+                <img src="./assets/images/banner-01/banner_01_controller.png" class="banner-01-controller" />
+            </div>
+        </div>
+        <!-- baner 03 -->
+        <!-- banner indicator  -->
+        <div id="banner-indicator-container" class="banner-position-indicator position-absolute start-50 translate-middle-x d-flex flex-row justify-content-between">
+            <div id="banner-indicator-1" data-banner="1" class="banner-indicator active-banner-indicator mx-1"></div>
+            <div id="banner-indicator-2" data-banner="2" class="banner-indicator mx-1"></div>
+            <div id="banner-indicator-3" data-banner="3" class="banner-indicator mx-1"></div>
+        </div>
+        <!-- banner indicator  -->
+        <div id="banner-pause-btn-container" class="banner-pause-btn-container position-absolute">
+            <i id="banner-pause-icon" class="fa-solid fa-pause banner-pause-icon"></i>
+        </div>
+    </section>
+    <!-- banner  -->
+    <!-- products quick view -->
+    <section class="popular-section container mt-5">
+        <div class="row product-row-topic-container d-flex justify-content-start align-items-end mb-4">
+            <h4 class="row product-row-topic my-0 me-3">Most Popular</h4>
+            <a href="products.html" class="see-all-products-link d-block position-relative text-dark m-0 p-0">See all</a>
+        </div>
+        <div class="row popular-product-row quick-products-row d-flex justify-content-between align-items-center">
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center">$<span>999.99</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center">$<span>999.99</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center">$<span>999.99</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center">$<span>999.99</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+        </div>
+    </section>
+    <!-- products quick view -->
+    <!-- products quick view -->
+    <section class="popular-section container mt-5">
+        <div class="row product-row-topic-container d-flex justify-content-start align-items-end mb-4">
+            <h4 class="row product-row-topic my-0 me-3">Flash Sale</h4>
+            <a href="products.html" class="see-all-products-link d-block position-relative text-dark m-0 p-0">See all</a>
+        </div>
+        <div class="row popular-product-row quick-products-row d-flex justify-content-between align-items-center">
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center position-relative">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                            <div class="product-discount position-absolute top-0 end-0 ">
+                                <p class="discount-tag-text position-absolute"><span>75</span>%</p>
+                            </div>
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center m-0">$<span>999.99</span></p>
+                            <div class="row discount-amount-container">
+                                <div class="col-12 d-flex justify-content-center align-items-start">
+                                    <p class="discount-amount before-price me-2"><s>$999.99</s></p>
+                                    <p class="discount-amount added-discount ms-2">75% OFF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center position-relative">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                            <div class="product-discount position-absolute top-0 end-0 ">
+                                <p class="discount-tag-text position-absolute"><span>50</span>%</p>
+                            </div>
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center m-0">$<span>999.99</span></p>
+                            <div class="row discount-amount-container">
+                                <div class="col-12 d-flex justify-content-center align-items-start">
+                                    <p class="discount-amount before-price me-2"><s>$999.99</s></p>
+                                    <p class="discount-amount added-discount ms-2">50% OFF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center position-relative">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                            <div class="product-discount position-absolute top-0 end-0 ">
+                                <p class="discount-tag-text position-absolute"><span>60</span>%</p>
+                            </div>
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center m-0">$<span>999.99</span></p>
+                            <div class="row discount-amount-container">
+                                <div class="col-12 d-flex justify-content-center align-items-start">
+                                    <p class="discount-amount before-price me-2"><s>$999.99</s></p>
+                                    <p class="discount-amount added-discount ms-2">60% OFF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+            <!-- product  -->
+            <div class="col-2 newtech-product">
+                <a href="single-product.html" class="newtech-product-link d-block">
+                    <div class="row">
+                        <div class="col-12 newtech-product-img-container d-flex justify-content-center align-items-center position-relative">
+                            <img src="./assets/images/product_01/img-01.jpg" class="newtech-product-img" />
+                            <div class="product-discount position-absolute top-0 end-0 ">
+                                <p class="discount-tag-text position-absolute"><span>20</span>%</p>
+                            </div>
+                        </div>
+                        <div class="col-12 product-title-container mt-3">
+                            <p class="product-title text-dark text-center">Sample Product to Rock the Design</p>
+                        </div>
+                        <div class="col-12 product-price-container">
+                            <p class="product-price text-center m-0">$<span>999.99</span></p>
+                            <div class="row discount-amount-container">
+                                <div class="col-12 d-flex justify-content-center align-items-start">
+                                    <p class="discount-amount before-price me-2"><s>$999.99</s></p>
+                                    <p class="discount-amount added-discount ms-2">20% OFF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- product  -->
+        </div>
+    </section>
+    <!-- products quick view -->
+    <!-- bottom banner  -->
+    <section class="container mt-5 mb-5">
+        <div class="row bottom-banner-container d-flex flex-column justify-content-center">
+            <div class="col-12 bottom-banner-topic-container my-4">
+                <h2 class="bottom-banner-topic text-center">Meet the Top Brands</h2>
+            </div>
+            <div class="row brand-logos-container d-flex justify-content-evenly align-items-center my-4">
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/apple-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/google-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/samsung-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/huawei-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/lg-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/nvidia-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/panasonic-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+                <!-- logo  -->
+                <div class="col-1 brand-logo-container"><img src="./assets/images/bottom_banner/brand-logos/sony-logo.svg" class="brand-logo" />
+                </div>
+                <!-- logo  -->
+            </div>
+        </div>
+    </section>
+    <!-- bottom banner  -->
+    <!-- footer  -->
+    <footer class="container-fluid footer position-relative">
+        <div class="container">
+            <div class="row py-5 d-flex justify-content-between align-items-start">
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Join us</h5>
+                    <a href="signin.html" class="footer-link">Sign in</a>
+                    <a href="register.html" class="footer-link">Register</a>
+                    <a href="#" class="footer-link">Sell</a>
+                    <a href="#" class="footer-link">Activities</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">About newTech</h5>
+                    <a href="#" class="footer-link">Company info</a>
+                    <a href="#" class="footer-link">News</a>
+                    <a href="#" class="footer-link">Our Blog</a>
+                    <a href="#" class="footer-link">Policies</a>
+                    <a href="#" class="footer-link">Government relations</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Connect with Us</h5>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-facebook footer-icon me-2"></i>Facebook</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-twitter me-2"></i>Twitter</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-linkedin me-2"></i>Linked in</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-youtube me-2"></i>Youtube</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Help & Contact</h5>
+                    <a href="#" class="footer-link">Seller Information Center</a>
+                    <a href="#" class="footer-link">Contact us</a>
+                </div>
+            </div>
+            <div class="row copyright-container">
+                <p class="text-center footer-copyright-text">Copyright &copy; 2023 newTech Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/banner.js"></script>
+</body>
+
+</html>

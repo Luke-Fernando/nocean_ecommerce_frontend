@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>newTech | Manage Users</title>
+</head>
+
+<body>
+    <main class="container admin-main-container position-relative">
+        <!-- navbar  -->
+        <nav class="admin-navbar-container">
+            <div class="row admin-navbar-sub-container py-4 d-flex flex-row justify-content-between">
+                <div class="col-6 col-md-4 admin-left-container d-flex align-items-center position-relative">
+                    <button id="admin-menu-expand-btn" class="admin-menu-expand-btn">
+                        <i id="admin-menu-expand-icon" class="fa-solid fa-arrow-right admin-menu-expand-icon"></i>
+                    </button>
+                </div>
+                <div class="col-5 col-xl-3 admin-right-container">
+                    <div class="row">
+                        <div class="col-4 admin-nav-right">
+                            <button class="admin-navbar-btn">
+                                <i class="fa-regular fa-message admin-nav-icon"></i>
+                                <div class="admin-navbar-btn-badge"></div>
+                            </button>
+                        </div>
+                        <div class="col-4 admin-nav-right notifications-container">
+                            <button class="admin-navbar-btn">
+                                <i class="fa-regular fa-bell admin-nav-icon"></i>
+                                <div class="admin-navbar-btn-badge"></div>
+                            </button>
+                        </div>
+                        <div class="col-4 admin-nav-right admin-logo-container">
+                            <a href="index.html"><img src="./assets/images/logo.svg" class="admin-nav-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar  -->
+        <section id="admin-collapse-menu-container" class="col-5 col-md-3 admin-collapse-menu-container">
+            <div class="row d-flex flex-column align-items-center g-0 mt-5 pt-5">
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="admin.html" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-house admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Home</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="#" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-clipboard-list admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Orders</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="manage-products.html" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-box-open admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5">
+                    <a href="#" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-users admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Users</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+            </div>
+        </section>
+        <!-- users main  -->
+        <div class="row users-main-container">
+            <div class="col-12 users-main-title-container">
+                <h4 class="users-main-title">Manage Users</h4>
+            </div>
+            <!-- boxes container  -->
+            <div class="col-12 mt-4">
+                <div class="row users-main-details-indicator-boxes d-flex justify-content-around">
+                    <!-- box  -->
+                    <div class="col-5 user-details-indicator-box p-4">
+                        <div class="users-indicator-icon-container my-3">
+                            <i class="fa-solid fa-users users-indicator-icon"></i>
+                        </div>
+                        <h5 class="users-box-title my-3">Total users</h5>
+                        <h1 class="users-box-value display-3 my-3">2,420</h1>
+                    </div>
+                    <!-- box  -->
+                    <!-- box  -->
+                    <div class="col-5 user-details-indicator-box p-4">
+                        <div class="users-indicator-icon-container my-3">
+                            <i class="fa-solid fa-display users-indicator-icon"></i>
+                        </div>
+                        <h5 class="users-box-title my-3">Active users</h5>
+                        <h1 class="users-box-value display-3 my-3">328</h1>
+                    </div>
+                    <!-- box  -->
+                </div>
+            </div>
+            <!-- boxes container  -->
+            <!-- search  -->
+            <div class="row user-search-container mt-4">
+                <div class="col-6 search-bar-container">
+                    <label for="user-search" class="me-3"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input id="user-search" type="text" class="user-search-bar" placeholder="Search user">
+                </div>
+            </div>
+            <!-- search  -->
+            <div class="row user-list mt-4">
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge"></i></div>
+                            <p class="status-text m-0">Inactive</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge"></i></div>
+                            <p class="status-text m-0">Inactive</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <!-- user  -->
+                <div class="col-12 user-container d-flex flex-nowrap justify-content-between">
+                    <div class="left-wrapper d-flex flex-nowrap">
+                        <div class="user-img-container me-4">
+                            <img src="./assets/images/user.jpg" class="user-img">
+                        </div>
+                        <div class="user-bio-container">
+                            <p class="user-name m-0">John Doe</p>
+                            <p class="user-email m-0">john@email.com</p>
+                        </div>
+                    </div>
+                    <div class="center-wrapper d-flex flex-nowrap">
+                        <div class="status-container d-flex flex-nowrap align-items-center me-4">
+                            <div class="status-badge-container me-3"><i class="fa-solid fa-circle status-badge status-badge-active"></i></div>
+                            <p class="status-text m-0">Active</p>
+                        </div>
+                        <div class="spent-amount-container d-flex flex-column align-items-center me-4">
+                            <p class="spent-text m-0">Spent</p>
+                            <p class="spent-amount m-0">$1.2k</p>
+                        </div>
+                        <div class="user-tier-container d-flex flex-nowrap align-items-center">
+                            <i class="fa-solid fa-medal user-tier-icon user-tier-icon-gold m-0 me-2"></i>
+                            <p class="user-tier m-0">Gold</p>
+                        </div>
+                    </div>
+                    <div class="right-wrapper d-flex flex-nowrap align-items-center">
+                        <i title="Edit" class="fa-solid fa-pen-to-square user-manage-icon me-3"></i>
+                        <i title="Delete" class="fa-solid fa-trash user-manage-icon"></i>
+                    </div>
+                </div>
+                <!-- user  -->
+                <div class="col-12 mt-4">
+                    <a href="#" class="see-all-users-link">See all users</a>
+                </div>
+            </div>
+
+            <div class="row user-list-main-container">
+
+            </div>
+        </div>
+
+        <footer class="register-footer container-fluid footer position-relative">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center pt-5">
+                    <div class="col-3 d-flex justify-content-between">
+                        <a href="#" class="register-footer-link">Conditions of Use</a>
+                        <a href="#" class="register-footer-link">Privacy Notice</a>
+                        <a href="#" class="register-footer-link">Help</a>
+                    </div>
+                    <div class="col-12 copyright-container mt-3">
+                        <p class="text-center footer-copyright-text">Copyright &copy; 2023 newTech Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/admin.js"></script>
+</body>
+
+</html>

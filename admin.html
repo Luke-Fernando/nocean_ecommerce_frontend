@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>newTech | Admin Dashboard</title>
+</head>
+
+<body class="body admin-body">
+
+
+
+    <main class="container admin-main-container position-relative">
+        <!-- navbar  -->
+        <nav class="admin-navbar-container">
+            <div class="row admin-navbar-sub-container py-4 d-flex flex-row justify-content-between">
+                <div class="col-6 col-md-4 admin-left-container d-flex align-items-center position-relative">
+                    <button id="admin-menu-expand-btn" class="admin-menu-expand-btn">
+                        <i id="admin-menu-expand-icon" class="fa-solid fa-arrow-right admin-menu-expand-icon"></i>
+                    </button>
+                </div>
+                <div class="col-5 col-xl-3 admin-right-container">
+                    <div class="row">
+                        <div class="col-4 admin-nav-right">
+                            <button class="admin-navbar-btn">
+                                <i class="fa-regular fa-message admin-nav-icon"></i>
+                                <div class="admin-navbar-btn-badge"></div>
+                            </button>
+                        </div>
+                        <div class="col-4 admin-nav-right notifications-container">
+                            <button class="admin-navbar-btn">
+                                <i class="fa-regular fa-bell admin-nav-icon"></i>
+                                <div class="admin-navbar-btn-badge"></div>
+                            </button>
+                        </div>
+                        <div class="col-4 admin-nav-right admin-logo-container">
+                            <a href="index.html"><img src="./assets/images/logo.svg" class="admin-nav-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar  -->
+        <section id="admin-collapse-menu-container" class="col-5 col-md-3 admin-collapse-menu-container">
+            <div class="row d-flex flex-column align-items-center g-0 mt-5 pt-5">
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="#" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-house admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Home</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="#" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-clipboard-list admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Orders</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5 mb-4">
+                    <a href="manage-products.html" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-box-open admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+                <!-- admin nav link  -->
+                <div class="col-11 admin-nav-link-container gx-5">
+                    <a href="users.html" class="admin-nav-link">
+                        <div class="row d-flex flex-row flex-nowrap py-2">
+                            <div class="col-2 admin-nav-link-icon-container me-3"><i class="fa-solid fa-users admin-nav-link-icon"></i></div>
+                            <div class="admin-nav-link-text-container">
+                                <p class="admin-nav-link-text m-0">Users</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- admin nav link  -->
+            </div>
+        </section>
+        <div class="row admin-sub-container ">
+            <div class="row earning-stats-n-countries-container">
+                <!-- earnings  -->
+                <div class="col-12 col-xl-6 earning-stats-container">
+                    <div class="row">
+                        <!-- title  -->
+                        <div class="col-12 earning-starts-title-container d-flex justify-content-between align-items-center flex-nowrap">
+                            <h4 class="earning-starts-title">Store earnings</h4>
+                            <a href="#" class="earning-starts-link px-4"><i class="fa-solid fa-caret-right earning-starts-link-icon"></i></a>
+                        </div>
+                        <!-- title  -->
+                        <!-- stats  -->
+                        <div class="col-12 earning-stats mt-5 d-flex justify-content-around flex-wrap">
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-networth"><i class="fa-solid fa-chart-line stat-icon stat-icon-networth"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">total net worth</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$95,250.90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-earning"><i class="fa-solid fa-sack-dollar stat-icon stat-icon-earning"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">total earnings</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$200,596.80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-returning"><i class="fa-solid fa-repeat stat-icon stat-icon-returning"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">returning orders</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$5,310.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-netprofit"><i class="fa-solid fa-medal stat-icon stat-icon-netprofit"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">net profit this month</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$25,596.80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-total-profit"><i class="fa-solid fa-arrow-up stat-icon stat-icon-total-profit"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">total profit</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$46.20k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                            <!-- stat  -->
+                            <div class="col-5 my-3 earning-stat-container">
+                                <div class="row gx-1 d-flex justify-content-center align-items-center">
+                                    <div class="col-2 me-2 stat-icon-container stat-icon-container-total-expenses"><i class="fa-solid fa-arrow-down stat-icon stat-icon-total-expenses"></i></div>
+                                    <div class="col-8 stat-texts-container">
+                                        <div class="row d-flex justify-content-between align-items-center">
+                                            <div class="col-12 stat-title-container">
+                                                <p class="stat-title m-0">total expenses</p>
+                                            </div>
+                                            <div class="col-12 stat-value-container">
+                                                <p class="stat-value m-0">$12.46k</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stat  -->
+                        </div>
+                        <!-- stats  -->
+                    </div>
+                </div>
+                <!-- earnings  -->
+                <!-- top countries  -->
+                <div class="col-12 col-xl-6 top-countries-container">
+                    <div class="row">
+                        <div class="col-12 top-countries-title-container d-flex justify-content-between align-items-center flex-nowrap">
+                            <h4 class="top-countries-title">Top countries by visits</h4>
+                            <a href="#" class="top-countries-link px-4"><i class="fa-solid fa-caret-right top-countries-link-icon"></i></a>
+                        </div>
+
+                        <div class="row top-countries d-flex flex-column align-items-center
+                         mt-5">
+                            <!-- country  -->
+                            <div class="col-10 top-country-container us-container my-2">
+                                <div class="top-country-name-container text-center d-flex flex-column justify-content-between">
+                                    <h5 class="top-country-name m-0 text-light position-relative">United States</h5>
+                                    <h6 class="top-country-percentage m-0 text-light position-relative">50%</h6>
+                                </div>
+                            </div>
+                            <!-- country  -->
+                            <!-- country  -->
+                            <div class="col-10 top-country-container uk-container my-2">
+                                <div class="top-country-name-container text-center d-flex flex-column justify-content-between">
+                                    <h5 class="top-country-name m-0 text-light position-relative">United Kingdom</h5>
+                                    <h6 class="top-country-percentage m-0 text-light position-relative">25%</h6>
+                                </div>
+                            </div>
+                            <!-- country  -->
+                            <!-- country  -->
+                            <div class="col-10 top-country-container lk-container my-2">
+                                <div class="top-country-name-container text-center d-flex flex-column justify-content-between">
+                                    <h5 class="top-country-name m-0 text-light position-relative">Sri Lanka</h5>
+                                    <h6 class="top-country-percentage m-0 text-light position-relative">20%</h6>
+                                </div>
+                            </div>
+                            <!-- country  -->
+                            <!-- country  -->
+                            <div class="col-10 top-country-container india-container my-2">
+                                <div class="top-country-name-container text-center d-flex flex-column justify-content-between">
+                                    <h5 class="top-country-name m-0 text-light position-relative">India</h5>
+                                    <h6 class="top-country-percentage m-0 text-light position-relative">5%</h6>
+                                </div>
+                            </div>
+                            <!-- country  -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- top countries  -->
+            </div>
+            <div class="row top-selling-products-container mt-5">
+                <div class="col-12 top-selling-products-title-container">
+                    <h5 class="top-selling-products-title">Top selling products</h5>
+                </div>
+                <div class="col-12 top-selling-products">
+                    <div class="row d-flex justify-content-between mt-4 flex-wrap">
+                        <!-- product  -->
+                        <div class="col-3 col-xl-2 me-3 mt-2 mt-xl-0 me-xl-0 top-selling-product-container d-flex align-items-end">
+                            <div class="row">
+                                <div class="col-12 top-selling-products-view-count-container py-2">
+                                    <i class="fa-sharp fa-regular fa-eye top-selling-products-view-count-icon me-3"></i>
+                                    <p class="top-selling-products-view-count text-light m-0">439k</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product  -->
+                        <!-- product  -->
+                        <div class="col-3 col-xl-2 me-3 mt-2 mt-xl-0 me-xl-0 top-selling-product-container d-flex align-items-end">
+                            <div class="row">
+                                <div class="col-12 top-selling-products-view-count-container py-2">
+                                    <i class="fa-sharp fa-regular fa-eye top-selling-products-view-count-icon me-3"></i>
+                                    <p class="top-selling-products-view-count text-light m-0">439k</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product  -->
+                        <!-- product  -->
+                        <div class="col-3 col-xl-2 me-3 mt-2 mt-xl-0 me-xl-0 top-selling-product-container d-flex align-items-end">
+                            <div class="row">
+                                <div class="col-12 top-selling-products-view-count-container py-2">
+                                    <i class="fa-sharp fa-regular fa-eye top-selling-products-view-count-icon me-3"></i>
+                                    <p class="top-selling-products-view-count text-light m-0">439k</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product  -->
+                        <!-- product  -->
+                        <div class="col-3 col-xl-2 me-3 mt-2 mt-xl-0 me-xl-0 top-selling-product-container d-flex align-items-end">
+                            <div class="row">
+                                <div class="col-12 top-selling-products-view-count-container py-2">
+                                    <i class="fa-sharp fa-regular fa-eye top-selling-products-view-count-icon me-3"></i>
+                                    <p class="top-selling-products-view-count text-light m-0">439k</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/admin.js"></script>
+</body>
+
+</html>

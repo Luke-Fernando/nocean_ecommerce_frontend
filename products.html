@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>newTech | Products</title>
+</head>
+
+<body class="body">
+    <!-- navbar  -->
+    <navbar class="container newtech-navbar position-relative d-flex flex-column justify-content-start">
+        <div class="row newtech-navbar-sub">
+            <div class="col-3 col-md-2 newtech-logo-container d-flex justify-content-center align-items-center">
+                <a href="index.html"><img src="./assets/images/logo.svg" alt="newtech logo" class="newtech-logo"></a>
+            </div>
+            <div class="col-9 col-md-10 newtech-nav-links d-flex justify-content-end align-items-center">
+                <a href="signin.html" class="newtech-nav-link mx-3 d-none d-md-block">Sign in</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="register.html" class="newtech-nav-link mx-3 d-none d-md-block">Register</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="list.html" class="newtech-nav-link mx-3 d-none d-md-block">Sell</a>
+                <div class="nav-link-divider d-none d-md-block"></div>
+                <a href="#" class="newtech-nav-link mx-3 d-none d-md-block">Activities</a>
+                <a href="#" class="newtech-nav-link mx-3" title="Favourite"><i class="fa-regular fa-heart newtech-favourite-icon newtech-navbar-icon"></i></a>
+                <a href="#" class="newtech-nav-link mx-3" title="Search"><i class="fa-solid fa-magnifying-glass newtech-search-icon newtech-navbar-icon"></i></a>
+                <a href="#" class="newtech-nav-link mx-3" title="Bag"><i class="fa-solid fa-bag-shopping newtech-bag-icon newtech-navbar-icon"></i></a>
+                <a id="hamburger-container" href="#" class="newtech-nav-link ms-3 d-block position-relative d-md-none" title="top menu"><i id="newtech-hamburger-icon" class="fa-solid fa-bars newtech-hamburger-icon newtech-navbar-icon"></i>
+                    <i id="newtech-hamburger-icon-secondary" class="fa-solid fa-bars-staggered newtech-hamburger-icon newtech-navbar-icon position-absolute top-0 start-50 translate-middle-x opacity-0"></i></a>
+                <!-- <div id="hamburger-menu" class="hamburger-menu row ms-3 position-relative d-block d-md-none">
+                        <div class="ham-bar bar-1 col-9 position-absolute top-0 start-0"></div>
+                        <div id="bar-2" class="ham-bar bar-2 col-9 position-absolute top-50 start-0 translate-middle-y">
+                        </div>
+                        <div class="ham-bar bar-3 col-9 position-absolute bottom-0 start-0"></div>
+                    </div> -->
+            </div>
+        </div>
+    </navbar>
+    <!-- navbar  -->
+
+    <!-- main container  -->
+    <main class="products-main-container container">
+        <div class="row products-topic-container my-5">
+            <h4 class="products-topic">Most popular</h4>
+        </div>
+        <div class="row g-0 p-0 m-0">
+            <div class="col-1 g-0 p-0 m-0">
+                <button id="expand-filter-btn" class="expand-filter-btn d-block d-lg-none g-0 p-0 m-0">
+                    <i id="expand-filter-icon" class="fa-solid fa-square-caret-right expand-filter-icon g-0 p-0 m-0"></i>
+                    <!-- <i class="fa-solid fa-square-caret-left"></i> -->
+                </button>
+            </div>
+        </div>
+        <div class="row position-relative">
+            <!-- main filter  -->
+            <div id="main-filters-container" class="col-5 col-lg-3 main-filters-container">
+                <!-- first filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Brand</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-1" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-1" class="filter-option">Brand 01</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-2" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-2" class="filter-option">Brand 02</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-3" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-3" class="filter-option">Brand 03</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-4" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-4" class="filter-option">Brand 04</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-5" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-5" class="filter-option">Brand 05</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- first filter area  -->
+                <!-- second filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Color</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-6" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-6" class="filter-option">Black</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-7" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-7" class="filter-option">White</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-8" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-8" class="filter-option">Red</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-9" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-9" class="filter-option">Blue</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-10" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-10" class="filter-option">Pink</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- second filter area  -->
+                <!-- third filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Type</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-11" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-11" class="filter-option">Type 01</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-12" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-12" class="filter-option">Type 02</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-13" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-13" class="filter-option">Type 03</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-14" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-14" class="filter-option">Type 04</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-15" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-15" class="filter-option">Type 05</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- third filter area  -->
+                <!-- fourth filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Fetures</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-16" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-16" class="filter-option">Feture 01</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-17" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-17" class="filter-option">Feture 02</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-18" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-18" class="filter-option">Feture 03</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-19" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-19" class="filter-option">Feture 04</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-20" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-20" class="filter-option">Feture 05</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- fourth filter area  -->
+                <!-- fifth filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Country of Manufacture</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-21" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-21" class="filter-option">China</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-22" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-22" class="filter-option">Denmark</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-23" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-23" class="filter-option">Germany</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-24" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-24" class="filter-option">Japan</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-25" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-25" class="filter-option">United States</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- fifth filter area  -->
+                <!-- sixth filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Condition</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-26" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-26" class="filter-option">New</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-27" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-27" class="filter-option">Open box</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-28" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-28" class="filter-option">Excellent - Refurbished</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-29" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-29" class="filter-option">Very good - Refurbished</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-30" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-30" class="filter-option">Used</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- sixth filter area  -->
+                <!-- seventh filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Price</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-31" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-31" class="filter-option">Under $25.00</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-32" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-32" class="filter-option">$25.00 to $50.00</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-33" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-33" class="filter-option">Over $50.00</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <div class="row">
+                                <div class="col-4"><label for="filterbox-34" class="filter-option" hidden>Min</label>
+                                    <input id="filterbox-34" type="text" class="min-max-price-input me-2" placeholder="Min.">
+                                </div>
+                                <div class="col-1 d-flex justify-content-center align-items-center">
+                                    <p class="m-0 text-center">to</p>
+                                </div>
+                                <div class="col-4"><label for="filterbox-35" class="filter-option" hidden>Max</label>
+                                    <input id="filterbox-35" type="text" class="min-max-price-input me-2" placeholder="Max.">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- seventh filter area  -->
+                <!-- eighth filter area  -->
+                <section class="row filter-section mb-4">
+                    <!-- clickable filter bar -->
+                    <div data-filter class="row filter-main-bar">
+                        <div class="col-10 filter-name-container">
+                            <p class="m-0 filter-name">Buying format</p>
+                        </div>
+                        <div class="col-2 filter-arrow-container">
+                            <i class="fa-solid fa-chevron-up filter-arrow"></i>
+                            <!-- <i class="fa-solid fa-chevron-up filter-arrow"></i> -->
+                        </div>
+                    </div>
+                    <!-- clickable filter bar -->
+                    <div id="filter-items" class="row filter-items-section toggle-options mt-3">
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-36" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-36" class="filter-option">All listings</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-37" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-37" class="filter-option">Auction</label>
+                        </div>
+                        <!-- filter option  -->
+                        <!-- filter option  -->
+                        <div class="col-12 filter-option-container">
+                            <input id="filterbox-38" type="checkbox" class="form-check-input me-2">
+                            <label for="filterbox-38" class="filter-option">Buy it now</label>
+                        </div>
+                        <!-- filter option  -->
+                    </div>
+                </section>
+                <!-- eighth filter area  -->
+            </div>
+            <!-- main filter  -->
+            <div class="col-12 col-lg-9 main-products-container">
+                <!-- sub filter  -->
+                <div class="row sub-filter-container d-flex align-items-center justify-content-between py-2">
+                    <div class="col-3 sort-filter">
+                        <label for="sort-input" class="sort-input-label me-2">Sort</label><select id="sort-input" class="sort-input">
+                            <option value="">Price: low to high</option>
+                            <option value="">Price: high to low</option>
+                            <option value="">Avg. customer review</option>
+                            <option value="">Newest arrivals</option>
+                            <option value="">Best sellers</option>
+                        </select>
+                    </div>
+                    <div class="product-layout-btns d-flex">
+                        <button data-layout="list" class="product-layout-btn list-layout-btn active-layout"><i class="fa-solid fa-list"></i></button>
+                        <button data-layout="grid" class="product-layout-btn grid-layout-btn"><i class="fa-solid fa-grip"></i></button>
+                    </div>
+                </div>
+                <div class="row"><a href="advanced.html" class="advanced-search-link">Advanced search</a></div>
+                <!-- sub filter  -->
+                <div class="row products-container d-flex flex-row flex-wrap justify-content-start align-items-start">
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                    <!-- product  -->
+                    <div data-product="main" class="col-12 gx-5 my-3">
+                        <div data-product="sub" class="row product-container py-3 d-flex flex-row">
+                            <!-- product img  -->
+                            <div data-product="image" class="col-3 product-img-container g-0">
+                                <a href="single-product.html"><img src="./assets/images/product_01/img-01.jpg" class="product-img"></a>
+                                <div data-product-favourite="btn" class="product-favourite-btn"><i data-product-favourite="icon" class="fa-regular fa-heart product-favourite-icon"></i></div>
+                            </div>
+                            <!-- product img  -->
+                            <!-- product details  -->
+                            <div data-product="details" class="col-9 gx-4 product-details-container">
+                                <div class="row product-details">
+                                    <div class="col-12 product-name-container">
+                                        <p class="product-name"><a href="single-product.html" class="product-name-link">ASTRO A40 TR Headset Gaming Headphones For PS4 PS5 PC Xbox One Series S/X</a></p>
+                                    </div>
+                                    <div class="col-12 product-subtitle-container">
+                                        <p class="product-subtitle">Works Great 4th Gen Headset **Ships Fast**</p>
+                                    </div>
+                                    <div class="col-12 product-condition-container">
+                                        <p class="product-condition">Open box</p>
+                                    </div>
+                                    <div class="col-12 product-reviews-container">
+                                        <a href="single-product.html" class="d-block product-review-link">
+                                            <p class="product-reviews">
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star review-star"></i>
+                                                <i class="fa-solid fa-star-half-stroke review-star"></i>
+                                                <i class="fa-regular fa-star review-star"></i>
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 quick-product-price-container">
+                                        <p class="quick-product-price h5 mb-0">$65.95</p>
+                                    </div>
+                                    <div class="col-12 discount-container">
+                                        <p class="discount-price">Was: <span class="product-before-price"><s>$95.95</s></span></p>
+                                        <p class="discount-percentage">50% off</p>
+                                    </div>
+                                    <div class="col-12 buying-format-container">
+                                        <p class="buying-format">Buy it now</p>
+                                    </div>
+                                    <div class="col-12 shipping-cost-container">
+                                        <p class="shipping-cost">+$39.38 shipping estimate</p>
+                                    </div>
+                                    <div class="col-12 current-location-container">
+                                        <p class="current-location">from United Kingdom</p>
+                                    </div>
+                                    <div class="col-12 sales-amount-container">
+                                        <p class="sales-amount">1520+ sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product details  -->
+                        </div>
+                    </div>
+                    <!-- product  -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main container  -->
+
+
+    <!-- footer  -->
+    <footer class="container-fluid footer position-relative">
+        <div class="container">
+            <div class="row py-5 d-flex justify-content-between align-items-start">
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Join us</h5>
+                    <a href="signin.html" class="footer-link">Sign in</a>
+                    <a href="register.html" class="footer-link">Register</a>
+                    <a href="#" class="footer-link">Sell</a>
+                    <a href="#" class="footer-link">Activities</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">About newTech</h5>
+                    <a href="#" class="footer-link">Company info</a>
+                    <a href="#" class="footer-link">News</a>
+                    <a href="#" class="footer-link">Our Blog</a>
+                    <a href="#" class="footer-link">Policies</a>
+                    <a href="#" class="footer-link">Government relations</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Connect with Us</h5>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-facebook footer-icon me-2"></i>Facebook</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-twitter me-2"></i>Twitter</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-linkedin me-2"></i>Linked in</a>
+                    <a href="#" class="footer-link"><i class="fa-brands fa-youtube me-2"></i>Youtube</a>
+                </div>
+                <div class="col-2 footer-part d-flex flex-column align-items-start">
+                    <h5 class="footer-link-topic">Help & Contact</h5>
+                    <a href="#" class="footer-link">Seller Information Center</a>
+                    <a href="#" class="footer-link">Contact us</a>
+                </div>
+            </div>
+            <div class="row copyright-container">
+                <p class="text-center footer-copyright-text">Copyright &copy; 2023 newTech Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer  -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/filter.js"></script>
+</body>
+
+</html>

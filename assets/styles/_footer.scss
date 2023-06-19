@@ -1,0 +1,26 @@
+.footer {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(87, 87, 87, 0.15);
+    left: 0;
+    top: 0;
+  }
+}
+.footer-link-topic {
+  color: rgba(0, 0, 0, 0.7);
+}
+.footer-link {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  &:hover {
+    color: rgba(90, 73, 227, 0.6);
+  }
+}
+.footer-copyright-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
