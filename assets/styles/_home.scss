@@ -154,13 +154,13 @@
   height: 100%;
 }
 .banner-01-black-friday {
-  //   font-size: 64px;
+  font-size: 4rem;
   color: $secondary-color;
   font-weight: 600;
   text-transform: capitalize;
 }
 .banner-01-discount {
-  //   font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   color: $secondary-color;
   text-transform: uppercase;
@@ -168,14 +168,18 @@
 .banner-01-sale-btn {
   //   width: 140px;
   //   height: 70px;
+  width: max-content;
+  height: auto;
   background-color: $primary-color;
-  color: $secondary-color !important;
+  color: $secondary-color;
   font-size: 2rem;
   font-weight: 500;
+  border: none;
+  padding: 5px 15px;
   text-transform: uppercase;
   transition: all ease-in-out 200ms;
   &:hover {
-    background-color: hsl(247, 73%, 69%) !important;
+    background-color: hsl(247, 73%, 69%);
   }
 }
 .banner-position-indicator {
@@ -185,7 +189,7 @@
   bottom: 10px;
 }
 .banner-indicator {
-  width: 15px !important;
+  width: 15px;
   aspect-ratio: 1/1;
   border: 3px solid $secondary-color;
   cursor: pointer;
@@ -207,6 +211,45 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .banner-01-black-friday {
+    font-size: 3rem;
+  }
+  .banner-01-discount {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .banner-01-black-friday {
+    font-size: 2.5rem;
+  }
+  .banner-01-discount {
+    font-size: 1.5rem;
+  }
+  .banner-01-sale-btn {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .banner-01-black-friday {
+    font-size: 2rem;
+  }
+  .banner-01-discount {
+    font-size: 1.2rem;
+  }
+  .banner-01-sale-btn {
+    font-size: 1rem;
+  }
+  .banner-position-indicator {
+    width: 50px;
+  }
+  .banner-indicator {
+    width: 10px;
+  }
+  .banner-pause-icon {
+    font-size: 25px;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /*                                 top banner                                 */
 /* -------------------------------------------------------------------------- */
