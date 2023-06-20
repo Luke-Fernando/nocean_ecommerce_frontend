@@ -1,19 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   --primary-color: #5a49e3;
-  --secondary-color: #f7ebff;
+  --secondary-color: #ffffff;
+  --light-primary-color: hsl(247, 73%, 75%);
+  --black: rgb(22, 22, 22);
+  --grey-text-color: #808080;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-body {
+.body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   navbar                                   */
+/* -------------------------------------------------------------------------- */
 .newtech-navbar::after {
   content: "";
   position: absolute;
@@ -88,6 +95,12 @@ body {
     width: 100%;
   }
 }
+/* -------------------------------------------------------------------------- */
+/*                                   navbar                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 categories                                 */
+/* -------------------------------------------------------------------------- */
 .categories-sub-container {
   height: 50px;
 }
@@ -136,6 +149,12 @@ body {
   background-color: white;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 categories                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 top banner                                 */
+/* -------------------------------------------------------------------------- */
 .newtech-banner {
   min-width: 100%;
   aspect-ratio: 144/38;
@@ -219,6 +238,12 @@ body {
   scale: 1.1;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 top banner                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                           quick view products row                          */
+/* -------------------------------------------------------------------------- */
 .newtech-product-link {
   text-decoration: none;
 }
@@ -236,7 +261,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 .see-all-products-link::after {
@@ -259,46 +284,79 @@ body {
 }
 
 .product-title {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .product-price {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--black);
 }
 
 .product-discount {
-  width: 90px;
-  aspect-ratio: 1/1;
-  background-image: url("../images/discount_tag.svg");
-  background-size: contain;
-  background-position: left top;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  border-radius: 5px;
+  background-color: var(--primary-color);
 }
 
 .discount-tag-text {
-  font-size: 16px;
+  font-size: 0.8rem;
   font-weight: 600;
+  padding: 5px 10px;
   color: var(--secondary-color);
-  top: 15%;
-  right: 15%;
 }
 
 .discount-amount {
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: 500;
-}
-
-.before-price {
-  color: rgba(90, 73, 227, 0.6);
-}
-
-.added-discount {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--grey-text-color);
   text-transform: uppercase;
 }
 
+.quick-products-row {
+  overflow-x: hidden;
+}
+
+.quick-products-scroll-btn {
+  width: -moz-max-content;
+  width: max-content;
+  aspect-ratio: 1/1;
+  border: none;
+  z-index: 100;
+  background-color: var(--light-primary-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all ease-in-out 200ms;
+}
+
+.quick-products-scroll-btn-left {
+  left: 0;
+}
+
+.quick-products-scroll-btn-right {
+  right: 0;
+}
+
+.quick-products-scroll-btn-active {
+  background-color: var(--primary-color);
+}
+
+.scroller {
+  transition: all ease-in-out 500ms;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           quick view products row                          */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                bottom banner                               */
+/* -------------------------------------------------------------------------- */
 .bottom-banner-container {
   aspect-ratio: 144/38;
   background-image: url("../images/bottom_banner/bottom_banner_bg.svg");
@@ -319,6 +377,9 @@ body {
   scale: 1.1;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                bottom banner                               */
+/* -------------------------------------------------------------------------- */
 .footer::before {
   content: "";
   position: absolute;

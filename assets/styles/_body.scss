@@ -1,13 +1,18 @@
 * {
   --primary-color: #5a49e3;
-  --secondary-color: #f7ebff;
+  // --secondary-color: #f7ebff;
+  --secondary-color: #ffffff;
+  --light-primary-color: hsl(247, 73%, 75%);
+  --black: rgb(22, 22, 22);
+  --grey-text-color: #808080;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
-body {
+.body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
