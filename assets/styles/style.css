@@ -412,7 +412,14 @@
 }
 
 .bottom-banner-topic {
+  font-size: 2rem;
   color: var(--secondary-color);
+}
+
+.brand-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand-logo {
@@ -423,6 +430,15 @@
   scale: 1.1;
 }
 
+@media (max-width: 992px) {
+  .bottom-banner-topic {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+  }
+  .brand-logo {
+    width: 75%;
+  }
+}
 /* -------------------------------------------------------------------------- */
 /*                                bottom banner                               */
 /* -------------------------------------------------------------------------- */
